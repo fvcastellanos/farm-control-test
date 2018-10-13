@@ -1,4 +1,4 @@
-package edu.umg.farm.cucumber.farmcontroltest;
+package edu.umg.farm.cucumber;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
