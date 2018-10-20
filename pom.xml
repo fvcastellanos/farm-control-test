@@ -9,7 +9,6 @@
 	<packaging>jar</packaging>
 
 	<name>farm-control-test</name>
-	<description>Demo project for Spring Boot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -29,6 +28,14 @@
 
 		<cucumber.version>4.0.0</cucumber.version>
 	</properties>
+
+    <repositories>
+        <repository>
+            <id>atlassian-repo</id>
+            <name>atlassian repo</name>
+            <url>https://packages.atlassian.com/maven-3rdparty/</url>
+        </repository>
+    </repositories>
 
 	<dependencies>
 		<dependency>
@@ -57,7 +64,6 @@
 		</dependency>		
 
 		<!-- Tests -->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -98,6 +104,28 @@
 			<version>1.2.0</version>
 			<scope>test</scope>
 		</dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.13.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>htmlunit-driver</artifactId>
+			<version>2.29.0</version>
+            <scope>test</scope>
+		</dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/xhtmlrenderer -->
+        <dependency>
+            <groupId>org.xhtmlrenderer</groupId>
+            <artifactId>xhtmlrenderer</artifactId>
+            <version>8.7-atlassian-3</version>
+            <scope>test</scope>
+        </dependency>
 	</dependencies>
 
 	<build>
