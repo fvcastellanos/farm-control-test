@@ -56,13 +56,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-        </dependency>
-
         <!-- Commons Lang -->
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -76,13 +69,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<!--<dependency>-->
-			<!--<groupId>io.cucumber</groupId>-->
-			<!--<artifactId>cucumber-java8</artifactId>-->
-			<!--<version>${cucumber.version}</version>-->
-			<!--<scope>test</scope>-->
-		<!--</dependency>-->
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -112,18 +98,32 @@
 			<!--<scope>test</scope>-->
 		<!--</dependency>-->
 
-        <!--<dependency>-->
-            <!--<groupId>org.seleniumhq.selenium</groupId>-->
-            <!--<artifactId>selenium-java</artifactId>-->
-            <!--<version>3.13.0</version>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.13.0</version>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>htmlunit-driver</artifactId>
 			<version>2.29.0</version>
             <scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>2.39.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>3.9.1</version>
+			<scope>test</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->

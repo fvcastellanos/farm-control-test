@@ -4,19 +4,17 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.springframework.beans.factory.annotation.Value;
 
 import static junit.framework.TestCase.assertNotNull;
 
-public class FarmControlDefs extends BaseSpringTest {
+public class FarmControlDashboardDefs extends BaseSpringTest {
 
     @Value("${dashboard.url:http://127.0.0.1:8080}")
     private String dashboardUrl;
 
     private WebDriver webDriver;
-    private WebElement webElement;
 
     @Given("I have historical sensor reading data")
     public void i_have_historical_sensor_reading_data() {
@@ -37,7 +35,7 @@ public class FarmControlDefs extends BaseSpringTest {
     public void i_should_be_able_to_see_historical_reading_table() {
         // Write code here that turns the phrase above into concrete actions
 
-        webElement = ((HtmlUnitDriver) webDriver).findElementById("sensor-reading");
+        var webElement = ((HtmlUnitDriver) webDriver).findElementById("sensor-reading");
 
         webDriver.close();
 
