@@ -20,8 +20,6 @@ public class FarmControlDashboardUpdateDefs {
 
     private WebDriver webDriver;
 
-    private FirefoxDriver firefoxDriver;
-
     @Given("Historical sensor reading data displays {int} rows by default")
     public void historical_sensor_reading_data_displays_rows_by_default(Integer value) {
 
