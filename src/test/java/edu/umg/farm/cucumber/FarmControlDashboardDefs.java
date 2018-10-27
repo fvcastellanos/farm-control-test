@@ -11,7 +11,7 @@ import static junit.framework.TestCase.assertNotNull;
 
 public class FarmControlDashboardDefs extends BaseSpringTest {
 
-    @Value("${dashboard.url:http://127.0.0.1:8080}")
+    @Value("${dashboard.url:http://app-host:8080}")
     private String dashboardUrl;
 
     private WebDriver webDriver;
