@@ -12,7 +12,7 @@ import static junit.framework.TestCase.assertNotNull;
 
 public class FarmControlReadTemperatureDefs {
 
-    @Value("${activation.url:http://localhost:8080/manual-activation}")
+    @Value("${activation.url:http://app-host:8080/manual-activation}")
     private String activationUrl;
 
     private WebDriver webDriver;

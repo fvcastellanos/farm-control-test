@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
 
 public class FarmControlDashboardUpdateDefs {
 
-    @Value("${dashboard.url:http://127.0.0.1:8080}")
+    @Value("${dashboard.url:http://app-host:8080}")
     private String dashboardUrl;
 
     private WebDriver webDriver;
